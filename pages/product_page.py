@@ -9,6 +9,11 @@ class ProductPage(BasePage):
         except NoSuchElementException:
             return "Button added product to busket not found"
 
+    def go_to_basket(self):
+        button_busket = self.browser.find_element(*ProductPageLocators.BUTTON_BASKET)
+        button_busket.click()
+    
+    def should_be_added_to_basket(self):
         self.solve_quiz_and_get_code()
         self.should_price_basket_be_similar_to_product()
         self.should_name_in_message_be_similar_to_product()
