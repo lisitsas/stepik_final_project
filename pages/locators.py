@@ -14,5 +14,5 @@ class ProductPageLocators():
     NAME_PRODUCT = (By.CSS_SELECTOR, ".product_main")
     MESSAGE_BUSKET_STATUS = (By.CSS_SELECTOR, ".instock availability")
     MESSAGE_PRODUCT_IN_BUSKET = (By.CSS_SELECTOR, ".alertinner")
-    PRICE  = (By.CSS_SELECTOR, ".product_main .price_color")
-    PRICE_BUSKET = (By.CSS_SELECTOR, ".alertinner strong")
+    PRICE  = (By.CSS_SELECTOR, "p.price_color")
+    PRICE_BUSKET = (By.CSS_SELECTOR, "#messages .alertinner p strong") 
